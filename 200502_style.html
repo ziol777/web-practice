@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS를 더듬어보자</title>
+        <meta charset="utf-8">
+        <!-- 1.id 선택자- #name :중복불가, 유일무이
+        2.class 선택자- .name :
+        3.tag 선택자- name -->
+        <style>
+            /* 더 위에 있는 선택자가 우선순위
+            id 선택자 - class 선택자 - 태그 선택자 순서로 우선순위가 높음 */
+            body{
+                align-self: center;
+                line-height:26px;
+                margin: 72px; 
+            }
+            h1{
+                color:#18191F;
+                font-size: 40px;
+                margin-top: 100px;
+                line-height: 56px;
+            }
+            h4{
+                color:#5F5E6A;
+                font-size: 16px;
+                font-weight: 800;
+                padding-top: 64px;
+            }
+            p{
+                color:#7F7F87;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            a{
+                color:#76ADFF;
+                text-decoration: none;
+            }
+            a:visited{
+                color:#042C92;
+            }
+            a:hover{
+                font-weight: 600;
+            }
+            img{
+                padding-top: 40px;
+                width: 100%; 
+            }
+            ol{
+                list-style: none;
+                line-height: 32px;
+                padding-left:0px;
+                padding-top: 24px;
+                }
+            .emphasize{
+                background-color:#FFF27A;
+            }
+            #app-name{
+                color: #18191F;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <h1> 오늘, <br> <span class="emphasize">같이 산책</span>할래요?</h1>
+        </div>
+
+        <div">
+            <h4> 우리 코코에게도 친구가 필요해요.</h4>
+            <p>
+                개는 사회적인 동물인데 교감 기회는 한정되어 있어요. 개도 친구가 필요하다는 사실, 알고 계신가요? 반려견은 집을 벗어나 산책을 통해 여러가지 감각 경험을 통해 다른 강아지들과 사람들에 대한 낯설음과 긴장감을 낮추고 스트레스를 해소할 수 있습니다. <br><br>사회화가 부족한 개는 낯선 사람이 만지는 것에 대한 공포가 있어 피하거나 위협, 물려고하는 성격으로 자라날 수 있고, 이로 인해 개를 만지기 어려워지면 목욕, 귀청소, 항문낭 짜기, 드라이, 약 먹이기 등의 개관리에 제한, 호텔 등의 케어 서비스가 제한되기도 해요.
+                <br><br>성견이 되어서도 사회화는 가능하지만, 특히 어릴 때부터 새로운 물건, 장소, 사람들에 대한 적절한 경험을 쌓으면 이러한 문제 행동을 감소시킬 가능성이 높아집니다. 사회화는 특정 시기에 그치는 것이 아니라 지속적으로 꾸준히 이루어지는 것이 좋다는 사실을 잊지 마세요.
+            </p>
+        </div>
+
+        <img src="https://cdn.dribbble.com/users/1355613/screenshots/6239079/walking_the_dog_4x.jpg?compress=1&resize=1200x900">
+
+        <div">
+            <h4 style="color: #5F5E6A;"> 지도 기반 애완견 매칭 서비스,&nbsp;<span id="app-name">개만나</span></h4>
+            <p>
+                이처럼 <a href="https://m.blog.naver.com/gatoblancokr/220682835835" target="_blank" title= "사회화의 중요성">사회화, 그리고 그것을 자주 이루어주는 것의 중요성</a> 은 반려견의 삶의 질을 높여주는 데 아주 중요한데요,<br>
+                개만나에서는 지도 위에서 함께 산책할 수 있는 친구 개를 매칭해주고 간단한 사회화 교육 가이드를 제공합니다. 뿐만 아니라 다양한 산책 스팟을 탐색해주고, 반려인과 반려견이 함께할 수 있는 애견 서비스들을 추천해줍니다.<br>
+                <br>개만나의 핵심 가치는 이렇게 정리해볼 수 있습니다.
+            </p>
+            <ol>
+                <li>1. 지도 기반 애완견 매칭 </li>
+                <li>2. 동네 반려인들과 함께 애완견을 산책시키고 네트워크 형성</li>
+                <li>3. 앱 서비스를 통해 비용 부담 없이 기본적이고 간단하게 애완견 사회화 교육</li> 
+                <li>4. 애견 산업을 활성화하는 지역 기반 서비스</li>
+                <li>5. 애견 산업 & 서비스 이용자의 연결고리 및 소통 창구</li> 
+            </ol>
+        </div>
+
+    </body>
+</html>
